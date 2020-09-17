@@ -20,7 +20,6 @@
       }).filter(function(item, pos, self) {
         return self.indexOf(item) == pos && item;
       });
-  
       var formData = {};
       fields.forEach(function(name){
         var element = elements[name];
@@ -55,13 +54,23 @@
       var form = event.target;
       var formData = getFormData(form);
       var data = formData.data;
+      var unableToSubmitMessage = form.querySelector(".fill_out_form_message");
+      var thankYouMessage = form.querySelector(".thankyou_message");
   
       // If a honeypot field is filled, assume it was done so by a spam bot.
       if (formData.honeypot) {
         return false;
       }
+      if (data.name === "" || data.email ==="" || data.message ===""){
+        thankYouMessage.style.display = "none";
+        unableToSubmitMessage.style.display="block"
+
+        return false
+    }
   
       disableAllButtons(form);
+        unableToSubmitMessage.style.display="none"
+
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
@@ -75,7 +84,6 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
             }
