@@ -2932,19 +2932,22 @@ body.is-touch .wrapper.style3 {
 
 @media screen and (max-width: 980px) {
 	.wrapper {
-		padding: 4em 0 2em 0;
+		padding: 5em 0 3em 0;
 	}
 }
 
 @media screen and (max-width: 736px) {
 	.wrapper {
-		padding: 3em 0 1em 0;
+		padding: 4em 0 2em 0;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.wrapper {
-		padding: 2em 0 0.1em 0;
+		padding: 4em 0 1.8em 0;
+	}
+	header.major{
+		margin-bottom: .6em;
 	}
 }
 
@@ -3354,7 +3357,7 @@ body.is-touch #banner {
 
 @media screen and (max-width: 480px) {
 	#banner {
-		padding: 1em;
+		/* padding: 1em; */
 		height: 100vh
 	}
 }
