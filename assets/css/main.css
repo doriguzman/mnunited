@@ -1832,7 +1832,7 @@ i {
 }
 
 p {
-	margin: 0 0 2em 0;
+	margin: 0 0 1em 0;
 }
 
 h1,
@@ -3480,6 +3480,6 @@ body.is-touch #banner {
 
 @media screen and (min-width: 980px) {
 	header.major.about{
-		margin:3.5em 0em
+		margin: 5.8em 0em
 	}
 }
