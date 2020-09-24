@@ -3469,17 +3469,17 @@ body.is-touch #banner {
 }
 
 
-.bio-details{
+.bio-details {
 	font-size: 16px
 }
 
-.about{
+.about {
 	line-height: 1.5;
 	color:#666;
 }
 
 @media screen and (min-width: 980px) {
-	header.major.about{
+	header.major.about {
 		margin: 5.8em 0em
 	}
 }
