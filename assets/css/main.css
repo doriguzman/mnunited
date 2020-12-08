@@ -3439,6 +3439,10 @@ body.is-touch #banner {
 	padding-left: 0;
 }
 
+#honeypot {
+	display: none; /*makes the field not visible to humans*/
+  }
+
 @media screen and (max-width: 980px) {
 	#footer {
 		padding: 6em 0 4em 0;
