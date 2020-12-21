@@ -3440,7 +3440,7 @@ body.is-touch #banner {
 }
 
 #honeypot {
-	display: none; /*makes the field not visible to humans*/
+	display: none;
   }
 
 @media screen and (max-width: 980px) {
