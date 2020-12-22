@@ -2769,6 +2769,7 @@ header.major h2 {
 	font-size: 3em;
 }
 
+
 header.major h2,
 header.major h3,
 header.major h4,
@@ -2779,6 +2780,7 @@ header.major h6 {
 }
 
 header.contact h2{
+	font-size: 2.5em;
 	margin: 0em
 }
 
@@ -3385,7 +3387,8 @@ body.is-touch #banner {
 
 #footer {
 	padding: 4em 0 4em 0;
-	background: #f6f6f6;
+	/* background: #f6f6f6;÷\ */
+	background: white;
 	color: #aaa;
 	text-align: center;
 }
